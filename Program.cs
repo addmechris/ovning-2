@@ -88,7 +88,7 @@ namespace övning_2
                                 sum += 80; 
                                 
                             }
-                            if (age_ticket > 64)
+                            else if (age_ticket > 64)
                             {
                                 sum += 90;
                             }
