@@ -76,57 +76,31 @@ namespace övning_2
 
                         int[] tickets = new int[arraysize];
 
-                        /*
-                        foreach (var item in tickets)
-                        {
-                            Console.WriteLine("Age?");
-                            int age_ticket = int.Parse(Console.ReadLine());
-
-                            if (age_ticket < 20)
-                            {
-                                tickets[arraysize] = 80;
-
-                            }
-                            if (age_ticket > 64)
-                            {
-                                tickets[arraysize] = 90;
-                            }
-                            else
-                            {
-                                tickets[arraysize] = 120;
-                            }
-                            
-                        }
-                        */
-
-                        for (int i = arraysize; i <= arraysize; i--)                      
+                   
+                        int sum = 0;
+                        for (int i = arraysize; i > 0; i--)                      
                         {
                             Console.WriteLine("Age?");
                            int age_ticket = int.Parse(Console.ReadLine());
-
+                            
                             if (age_ticket < 20)
                             {
-                                tickets[i] = 80; 
+                                sum += 80; 
                                 
                             }
                             if (age_ticket > 64)
                             {
-                                tickets[i] = 90;
+                                sum += 90;
                             }
                             else
                             {
-                                tickets[i] = 120;
+                                sum += 120;
                             }
                         }
-                        
 
-                        int sum = 0;
-                        foreach (var item in tickets)
-                        {
-                            sum += item;
-                            
-                        }
                         Console.WriteLine("The total sum is: " + sum);
+
+                       
                         break;
                     case 0:
                         
